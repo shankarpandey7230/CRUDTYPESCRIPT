@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #79625e;
+    --accent-color: #efba1c;
+    --accent-color-2: green;
+    --hover-color: #f0d070;
+    --hover-color-2: rgb(29, 202, 29);
+    --highlight-color: #ffcc00;
+    --error-color: rgb(202, 92, 92);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.main-container{
+    height: 600px;
+    width: 450px;
+    margin: auto;
+    background: linear-gradient(105deg, #79625e 0%,#646464 100%);
+
+}
+
+h1{
+    color: #222;
+    background: whitesmoke;
+    padding: 10px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    border: 2px #e1e1e1 solid;
+    
+    img{
+        width: 50px;
+    }
+}

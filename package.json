@@ -1,0 +1,15 @@
+{
+  "name": "phonebookts",
+  "version": "1.0.0",
+  "description": "CRUD DEMO TYPESCRIPT",
+  "main": "main.js",
+  "scripts": {
+"build":"tsc -w",
+"start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
