@@ -1,55 +1,42 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>TypeScript Phone Directory</title>
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        />
-    </head>
-    <body>
-        <div class="directory-container">
-            <h1 >
-                <img src="./assets/images/phoneDirectory.png" /> Phone Directory
-            </h1>
-            <h2>Contact Counter : <span id="contact-counter">0</span></h2>
 
-            <div class="directory-form">
-                <div class="directory-input">
-                    <input type="hidden" id="id-input" />
-                    <input type="text" id="name-input" placeholder="Name" />
-                    <input
-                        type="number"
-                        id="phone-input"
-                        placeholder="Phone number"
-                    />
-                </div>
-                <div class="directory-submit">
-                    <button class="add" id="add-button" onclick="addContact()">
-                        Add
-                    </button>
-                    <button
-                        class="update hidden"
-                        id="update-button"
-                        onclick="updateContactData()"
-                    >
-                        Update
-                    </button>
-                    <button
-                        class="reset hidden"
-                        id="reset-button"
-                        onclick="resetInputForm()"
-                    >
-                        Reset
-                    </button>
-                </div>
+<head>
+    <title>TypeScript Phone Directory</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="directory-container">
+        <h1>
+            <img src="./assets/images/phoneDirectory.png" /> Phone Directory
+        </h1>
+        <h2>Contact Counter : <span id="contact-counter">0</span></h2>
+
+        <div class="directory-form">
+            <div class="directory-input">
+                <input type="hidden" id="id-input" />
+                <input type="text" id="name-input" placeholder="Name" />
+                <input type="number" id="phone-input" placeholder="Phone number" />
             </div>
-            <div class="directory-list">
-                <ul id="contact-list">
-                    
-                </ul>
+            <div class="directory-submit">
+                <button class="add" id="add-button" onclick="addContact()">
+                    Add
+                </button>
+                <button class="update hidden" id="update-button" onclick="updateContactData()">
+                    Update
+                </button>
+                <button class="reset hidden" id="reset-button" onclick="resetInputForm()">
+                    Reset
+                </button>
             </div>
-            <script src="./dist/main.js"></script>
         </div>
-    </body>
+        <div class="directory-list">
+            <ul id="contact-list"></ul>
+        </div>
+        <script src="./dist/main.js"></script>
+    </div>
+</body>
+
 </html>
